@@ -1,0 +1,42 @@
+Paso 1: Descargar el Proyecto Base
+Descarga el Proyecto base "Apoyo Desafío - Branching" desde la plataforma.
+
+
+Paso 2: Inicializar Git y Crear Repositorio
+Abre una terminal en la carpeta del proyecto descargado.
+Ejecuta los siguientes comandos para inicializar un repositorio de Git, agregar los archivos y realizar el primer commit:
+> git init
+> git add .
+> git commit -m "Primer commit: Proyecto base"
+
+Paso 3: Crear Nueva Rama (Development)
+Crea una nueva rama llamada "development" con el siguiente comando:
+>git branch development
+Cambia a la nueva rama:
+>git checkout development
+
+Paso 4: Implementar Funcionalidad en la Rama Development
+Abre el archivo index.html y agrega el enlace a la página de GitHub.
+
+<!-- Agrega este enlace en la imagen -->
+<a href="https://github.com/tu-usuario/tu-repositorio" target="_blank">
+<img src="ruta-de-la-imagen.jpg" alt="Descripción de la imagen">
+</a>
+Guarda los cambios en el archivo.
+
+Paso 5: Agregar Cambios y Realizar Commit en Development
+Agrega los cambios a stage:
+git add index.html
+Realiza el commit en la rama "development":
+>git commit -m "Agrega enlace a la página de GitHub en index.html"
+
+Paso 6: Combinar Cambios con la Rama Master
+Cambia a la rama "master":
+>git checkout master
+Fusiona los cambios de la rama "development" a la rama "master":
+git merge development
+
+Preguntas adicionales:
+¿Existe el link en la imagen en la rama master?
+Sí, ahora que has fusionado los cambios de la rama "development" en la rama "master", el enlace a la página de GitHub estará presente en la rama "master".
+
